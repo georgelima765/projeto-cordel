@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+  
+  :root{
+    --fonte1:normal Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Bebas Neue', cursive;
+     --fonte3:'DynaPuff', cursive;
+}
+    
+  
+*{
+    margin: 0px;/* sem margen e sem padding(espaço do texto para a borda*/
+    padding: 0px;
+    
+}
+html, body{
+    min-height: 100vh;/* 100% do tamanho da viewport(corpo)*/
+    background-color:darkgray;
+    font: var(--fonte1);
+     
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;/*transforma letra minúscula em maiúscula*/
+    font: var(--fonte2) ;
+    font-size: 10vw;/*ajuste de largura automático do texto (viewport width)*/
+}
+header > p{
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;/* fonte negrito*/
+}
+  header a:hover{
+    text-decoration: underline;
+    color: chartreuse;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    line-height: 2em;/* distancia(espaço)entre uma linha e outra do parágrafo*/
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+section.imagem > p{
+background-color: rgba(0, 0, 0, 0.351);
+display: inline-block;
+padding: 10px;
+text-shadow: 2px 2px 2px  black;
+
+}
+
+section > p{
+   padding-bottom: 2em;
+   
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(3, 3, 3);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;/* fixa as imagens deixando o texto rolar*/
+    
+}
+section#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+
+  }
+section#img02{
+background-image: url("../imagens/background002.jpg");
+background-size: cover;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
+ footer a:hover{
+    text-decoration: underline;
+   color: chocolate;
+ 
+}
+
+ 
+
